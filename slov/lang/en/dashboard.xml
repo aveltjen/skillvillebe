@@ -1,0 +1,74 @@
+<langpack>
+   
+   <str_logout>Logout</str_logout>
+   
+   <str_joined>Joined</str_joined>
+   <str_showall>Show All</str_showall>
+   <str_changepass>Change Password</str_changepass>
+   <str_modify>Modify Details</str_modify>
+   
+   <str_reload>Reload</str_reload>
+   <str_addteacher>Add Teacher</str_addteacher>
+   <str_modteacher>Modify Teacher</str_modteacher>
+   <str_delteacher>Remove Teacher</str_delteacher>
+   <str_addgroup>Add Group</str_addgroup>
+   <str_modgroup>Modify Group</str_modgroup>
+   <str_delgroup>Delete Group</str_delgroup>
+   
+   <str_overview>Overview</str_overview>
+   <str_manteachers>Manage Teachers</str_manteachers>
+   <str_mangroups>Manage Groups</str_mangroups>
+   
+   <str_groups>Groups</str_groups>
+   <str_delgroupask>Delete Group from Database?</str_delgroupask>
+   <str_delgroupmsg>The group %s will be permanently deleted and cannot be recovered. Are you sure?</str_delgroupmsg>
+   <str_delerr>Cannot Remove Group</str_delerr>
+   <str_delerrmsg>The group %s contains students and cannot be removed.</str_delerrmsg>
+   
+   <str_teachers>Teachers</str_teachers>
+   <str_delteacherask>Delete Teacher from Database?</str_delteacherask>
+   <str_delteachermsg>The teacher %s will be permanently deleted and cannot be recovered. Are you sure?</str_delteachermsg>
+   <str_assigned>Assigned to Groups</str_assigned>
+   <str_unassigned>Groups</str_unassigned>
+   
+   <str_students>Students</str_students>
+   <str_package>Package</str_package>
+   <str_dateactive>Date Active</str_dateactive>
+   <str_acyear>Academic Year</str_acyear>
+   <str_totalstudents>Total Students</str_totalstudents>
+   <str_key>Key</str_key>
+   
+   <str_newpass>New password</str_newpass>
+   <str_confirmpass>Re-type password</str_confirmpass>
+   
+   <str_dateerror>Date Format not Recognised</str_dateerror>
+   <str_dateerror2>The date "%s" is not recognised by the system as a valid date.</str_dateerror2>
+   <str_passerr>Password Error</str_passerr>
+   <str_passerrmsg>The password cannot be empty.</str_passerrmsg>
+   <str_passerr2>Password Mismatch</str_passerr2>
+   <str_passerrmsg2>The passwords entered do not match. Please retry.</str_passerrmsg2>
+   
+   <str_admininfo>Admin Information</str_admininfo>
+   <str_basicinfo>Basic Information</str_basicinfo>
+   <str_schoolinfo>School Information</str_schoolinfo>
+   <str_groupinfo>Group Information</str_groupinfo>
+   <str_subscribed>Subscribed Packages</str_subscribed>
+  
+   <str_id>ID</str_id>
+   <str_name>Name</str_name>
+   <str_year>Year</str_year>
+   <str_uname>User Name</str_uname>
+   <str_firstname>First Name</str_firstname>
+   <str_lastname>Last Name</str_lastname>
+   
+   <str_schoolname>Name</str_schoolname>
+   <str_address>Address</str_address>
+   <str_postcode>Post code</str_postcode>
+   <str_city>City</str_city>
+   
+   <str_packname>Package Name</str_packname>
+   <str_packcount>Count / Total</str_packcount>
+   <str_modadmin>Modify Admin</str_modadmin>
+   <str_modschool>Modify School</str_modschool>
+   
+</langpack>

@@ -1,0 +1,74 @@
+<langpack>
+   
+   <str_logout> Выйти </str_logout>
+   
+   <str_joined> Регистрация </str_joined>
+   <str_showall> Показать все </str_showall>
+   <str_changepass> Изменить пароль </str_changepass>
+   <str_modify> Изменить Подробности </str_modify>
+   
+   <str_reload> Обновить </str_reload>
+   <str_addteacher> Добавить Учитель </str_addteacher>
+   <str_modteacher> Изменить учителя </str_modteacher>
+   <str_delteacher> Удалить учителя </str_delteacher>
+   <str_addgroup> Добавить группу </str_addgroup>
+   <str_modgroup> Изменить группу </str_modgroup>
+   <str_delgroup> удалять группа </str_delgroup>
+   
+   <str_overview> Обзор </str_overview>
+   <str_manteachers> Управление Учителя </str_manteachers>
+   <str_mangroups> Управление Группы </str_mangroups>
+   
+   <str_groups> Группы </str_groups>
+   <str_delgroupask> Удалить группу из базы данных </str_delgroupask>
+   <str_delgroupmsg> группы %s будут удалены и не могут быть восстановлены. Вы уверены? </str_delgroupmsg>
+   <str_delerr> Не удается удалить группу </str_delerr>
+   <str_delerrmsg> с группой студентов% содержит и не может быть удалена. </str_delerrmsg>
+   
+   <str_teachers> учителей </str_teachers>
+   <str_delteacherask> Удалить учителя из базы данных </str_delteacherask>
+   <str_delteachermsg> учитель %s будут удалены и не могут быть восстановлены. Вы уверены? </str_delteachermsg>
+   <str_assigned> отнесены к группам </str_assigned>
+   <str_unassigned> Группы </str_unassigned>
+   
+   <str_students> студентов </str_students>
+   <str_package> пакета </str_package>
+   <str_dateactive> Дата активность </str_dateactive>
+   <str_acyear> учебный год </str_acyear>
+   <str_totalstudents> Всего учащихся </str_totalstudents>
+   <str_key> ключ </str_key>
+   
+   <str_newpass> Новый пароль </str_newpass>
+   <str_confirmpass> Повторите пароль </str_confirmpass>
+   
+   <str_dateerror> Формат Дата не признанные </str_dateerror>
+   <str_dateerror2> даты "%s" не распознается системой как правильную дату. </str_dateerror2>
+   <str_passerr> пароль Ошибка </str_passerr>
+   <str_passerrmsg> пароль не может быть пустым. </str_passerrmsg>
+   <str_passerr2> Пароль Несоответствие </str_passerr2>
+   <str_passerrmsg2> пароли, введенные не совпадают. Пожалуйста, повторите попытку. </str_passerrmsg2>
+   
+   <str_admininfo> Админ информация </str_admininfo>
+   <str_basicinfo> Основная информация </str_basicinfo>
+   <str_schoolinfo> Информация о школе </str_schoolinfo>
+   <str_groupinfo> Информация о группе </str_groupinfo>
+   <str_subscribed> подпиской пакеты </str_subscribed>
+  
+   <str_id> ID </str_id>
+   <str_name> Имя </str_name>
+   <str_year> года </str_year>
+   <str_uname> Имя пользователя </str_uname>
+   <str_firstname> Имя </str_firstname>
+   <str_lastname> Фамилия </str_lastname>
+   
+   <str_schoolname> Имя </str_schoolname>
+   <str_address> Адрес </str_address>
+   <str_postcode> Почтовый индекс </str_postcode>
+   <str_city> Сити </str_city>
+   
+   <str_packname> Имя пакета </str_packname>
+   <str_packcount> считать / Всего </str_packcount>
+   <str_modadmin> Изменить администратора </str_modadmin>
+   <str_modschool> Изменить школе </str_modschool>
+   
+</langpack>

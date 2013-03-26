@@ -1,0 +1,16 @@
+<langpack>
+   
+   <str_title>Dit is die tuisblad...</str_title>
+   <str_login>Teken In</str_login>
+   <str_nopass>U wagwoord vergeet?</str_nopass>
+   <str_uname>Tik u gebruikersnaam in...</str_uname>
+   <str_pass>Tik u wagwoord in...</str_pass>
+   <str_username>Gebruikersnaam:</str_username>
+   <str_password>Wagwoord:</str_password>
+   <str_ohno>Ag nee!</str_ohno>
+   <str_msg1>Tik asseblief 'n gebruikersnaam en wagwoord in.</str_msg1>
+   <str_msg2>Tik asseblief 'n gebruikersnaam in.</str_msg2>
+   <str_msg3>Tik asseblief 'n wagwoord in.</str_msg3>
+   <str_msg4>U word nie in die stelsel gevind met die &lt;br/&gt;gebruikersnaam en/of wagwoord &lt;br/&gt; wat u verskaf het nie.</str_msg4>
+   
+</langpack>

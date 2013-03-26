@@ -1,0 +1,74 @@
+<langpack>
+   
+   <str_logout>Teken Uit</str_logout>
+   
+   <str_joined>Joined</str_joined>
+   <str_showall>Wys Alles</str_showall>
+   <str_changepass>Nuwe Wagwoord</str_changepass>
+   <str_modify>Verander Besonderhede</str_modify>
+   
+   <str_reload>Herlaai</str_reload>
+   <str_addteacher>Nuwe Onderwyser</str_addteacher>
+   <str_modteacher>Verander Onderwyser</str_modteacher>
+   <str_delteacher>Skrap Onderwyser</str_delteacher>
+   <str_addgroup>Nuwe Groep</str_addgroup>
+   <str_modgroup>Verander Groep</str_modgroup>
+   <str_delgroup>Skrap Groep</str_delgroup>
+   
+   <str_overview>Oorsig</str_overview>
+   <str_manteachers>Bestuur Onderwysers</str_manteachers>
+   <str_mangroups>Bestuur Groepe</str_mangroups>
+   
+   <str_groups>Groepe</str_groups>
+   <str_delgroupask>Skrap Groep uit Databasis?</str_delgroupask>
+   <str_delgroupmsg>Die groep %s sal permanent verwyder word en kan nie herwin word nie. Is u seker?</str_delgroupmsg>
+   <str_delerr>Kan Nie Groep Verwyder Nie</str_delerr>
+   <str_delerrmsg>Die groep %s bevat studente en kan nie verwyder word nie.</str_delerrmsg>
+   
+   <str_teachers>Onderwysers</str_teachers>
+   <str_delteacherask>Skrap Onderwyser uit Databasis?</str_delteacherask>
+   <str_delteachermsg>Die onderwyser %s sal permanent verwyder word en kan nie herwin word nie. Is u seker?</str_delteachermsg>
+   <str_assigned>Toegeteken aan Groepe</str_assigned>
+   <str_unassigned>Groepe</str_unassigned>
+   
+   <str_students>Studente</str_students>
+   <str_package>Pakket</str_package>
+   <str_dateactive>Datum Aktief</str_dateactive>
+   <str_acyear>Akademiese Jaar</str_acyear>
+   <str_totalstudents>Totale Studente</str_totalstudents>
+   <str_key>Sleutel</str_key>
+   
+   <str_newpass>Nuwe wagwoord</str_newpass>
+   <str_confirmpass>Bevestig wagwoord</str_confirmpass>
+   
+   <str_dateerror>Datum Formaat Nie Anvaar Nie</str_dateerror>
+   <str_dateerror2>Die datum "%s" word nie deur die stelsel as 'n geldige datum aanvaar nie.</str_dateerror2>
+   <str_passerr>Wagwoord Fout</str_passerr>
+   <str_passerrmsg>Die wagwoord moet iets bevat.</str_passerrmsg>
+   <str_passerr2>Wagwoord Fout</str_passerr2>
+   <str_passerrmsg2>Die wagwoorde stem nie ooreen nie. Probeer asseblief weer.</str_passerrmsg2>
+   
+   <str_admininfo>Admin Inligting</str_admininfo>
+   <str_basicinfo>Basiese Inligting</str_basicinfo>
+   <str_schoolinfo>Skool Inligting</str_schoolinfo>
+   <str_groupinfo>Groep Inligting</str_groupinfo>
+   <str_subscribed>Ingeskryfde Pakkette</str_subscribed>
+  
+   <str_id>ID</str_id>
+   <str_name>Naam</str_name>
+   <str_year>Jaar</str_year>
+   <str_uname>Gebruikersnaam</str_uname>
+   <str_firstname>Voornaam</str_firstname>
+   <str_lastname>Van</str_lastname>
+   
+   <str_schoolname>Naam</str_schoolname>
+   <str_address>Adres</str_address>
+   <str_postcode>Poskode</str_postcode>
+   <str_city>Stad</str_city>
+   
+   <str_packname>Pakket Naam</str_packname>
+   <str_packcount>Studente / Totaal</str_packcount>
+   <str_modadmin>Verander Admin</str_modadmin>
+   <str_modschool>Verander Skool</str_modschool>
+   
+</langpack>

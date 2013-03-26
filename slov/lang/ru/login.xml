@@ -1,0 +1,16 @@
+<langpack>
+   
+   <str_title> Это начало страницы ... </str_title>
+   <str_login> Логин </str_login>
+   <str_nopass> Забыли пароль? </str_nopass>
+   <str_uname> Введите имя пользователя ... </str_uname>
+   <str_pass> Введите свой пароль ... </str_pass>
+   <str_username> Имя пользователя: </str_username>
+   <str_password> Пароль: </str_password>
+   <str_ohno> О, нет! </str_ohno>
+   <str_msg1> Пожалуйста, введите имя пользователя и пароль для входа. </str_msg1>
+   <str_msg2> Пожалуйста, введите имя пользователя для входа в систему. </str_msg2>
+   <str_msg3> Пожалуйста, введите пароль для входа. </str_msg3>
+   <str_msg4> Мы не смогли найти Вас с &lt;br/&gt; имя пользователя и / или пароля &lt;br/&gt; вам обеспечены. </str_msg4>
+   
+</langpack>

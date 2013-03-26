@@ -1,0 +1,73 @@
+/*main CSS STYLESHEET*/
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	z-index: 1;
+}
+
+img.logo {
+	/* Set rules to fill background */
+	
+	min-width: 500px;
+	
+	/* Set up positioning */
+	position: absolute;
+	top: 60px;
+	left: 12%;
+	
+	z-index: 99;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+	img.bg {
+			left: 50%;
+			margin-left: -512px;   /* 50% */
+		}
+}
+
+#login_header{
+	position: relative;
+	z-index: 99;
+	background: rgb(0, 0, 0);
+	/* Fallback for web browsers that doesn't support RGBa */
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#login_content{
+	position: relative;
+	z-index: 99;
+}
+
+#login_form{
+	background: white;
+	margin-right: 0px;
+	margin-top: 10%;
+	padding: 5px 20px 5px 20px;
+	-moz-border-radius: 20px 0 0 20px; /* Firefox */  
+  	-webkit-border-radius: 20px 0 0 20px; /* Safari, Chrome */  
+  	border-radius: 20px 0 0 20px;/* CSS3 */
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.alert{
+	width: 190px;
+}

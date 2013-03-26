@@ -1,0 +1,16 @@
+<langpack>
+   
+   <str_title>This is the start page...</str_title>
+   <str_login>Login</str_login>
+   <str_nopass>Forgot your password?</str_nopass>
+   <str_uname>Enter your username...</str_uname>
+   <str_pass>Enter your password...</str_pass>
+   <str_username>Username:</str_username>
+   <str_password>Password:</str_password>
+   <str_ohno>Oh no!</str_ohno>
+   <str_msg1>Please enter a username and a password to login.</str_msg1>
+   <str_msg2>Please enter a username to login.</str_msg2>
+   <str_msg3>Please enter a password to login.</str_msg3>
+   <str_msg4>We could not find you with the &lt;br/&gt;username and/or password &lt;br/&gt; you provided.</str_msg4>
+   
+</langpack>

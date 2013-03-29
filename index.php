@@ -132,7 +132,7 @@
 	
     <img src="bg_skillville_front.jpg" id="bg">
 	<div style="position:absolute; top:40px; left: 50px; z-index:100"><a href="http://www.khlim.be" target="_blank"><img src="img/logos_ism_khlim.png"></a></div>
-	<div style="position:absolute; top:40px; left: 150px; z-index:100"><a href="http://www.kbc.be" target="_blank"><img src="img/logos_ism_kbc.png"></a></div>
+	<div style="position:absolute; top:130px; left: 35px; z-index:100"><a href="http://www.kbc.be" target="_blank"><img src="img/logos_ism_kbc.png"></a></div>
 	
     <div class="logo"><img src="skillville_logo2.png">
 	
@@ -156,13 +156,6 @@
 
 				<section>				
 					<p>
-						<table>
-						<tr>
-							<td>
-
-							</td>
-						</tr>
-						</table>
 						Skillville is een online multimediatool voor het verhogen van de financi&euml;le geletterdheid en de realisatie van de vakoverschrijdende eindtermen.</p>
 
 					<p>Financi&euml;le educatie is de ruggengraat van Skillville en integreert de andere contexten van de vakoverschrijdende eindtermen. 	<a class="fancybox" rel="group" href="img/slov.png">(open schema)</a>
@@ -172,8 +165,7 @@
 
 				<section>		
 					<p>De leerlingen van de 1ste, 2de & 3de graad van het secundair onderwijs. 
-					Financi&euml;le geletterdheid wordt er op niveau van de graad gerealiseerd met telkens 25 specifieke events. 
-					</p>		
+					Financi&euml;le geletterdheid wordt er op niveau van de graad gerealiseerd met telkens 25 specifieke events. </p>		
 				</section>
 
 				<section>

@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	<style type="text/css">
-     
+
 	#bg { position: fixed; top: 0; left: 0;}
 	.bgwidth { width: 100%; }
 	.bgheight { height: 100%; }
@@ -34,19 +34,19 @@
 		padding-right:20px;
 		z-index:1;
 		width:900px;
-		background-position:right; 
+		background-position:right;
 		height:500px;
 /*		border: 1px green solid;
 */		background-image:url('skillville_logo2.png');
 		background-repeat:no-repeat;
 	}
-	
+
 	nav { margin-bottom: 30px; position: relative; }
 	 nav ul {
 	  overflow: hidden;
 	  padding-bottom: 10px;
 	  border-bottom: 5px solid #bbb;
-	
+
 	 } nav li {
 	  float: left;
 	  margin-right: 35px;
@@ -58,11 +58,11 @@
 	 nav li a.current {
 	  color: #000;
 	 }
-	
-	
+
+
     </style>
 	<script>
-	$(window).load(function() {    
+	$(window).load(function() {
 
 		var theWindow        = $(window),
 		    $bg              = $("#bg"),
@@ -83,12 +83,12 @@
 		}
 
 		theWindow.resize(resizeBg).trigger("resize");
-		
+
 		$(document).ready(function() {
 				$(".fancybox").fancybox();
 			});
 	});
-	
+
 	$(document).ready(function() {
 		$(".various").fancybox({
 			maxWidth	: 700,
@@ -101,14 +101,26 @@
 			openEffect	: 'none',
 			closeEffect	: 'none'
 		});
+      $(".fancyiframe").fancybox({
+         maxWidth : 700,
+         maxHeight   : 650,
+         fitToView   : false,
+         width    : '70%',
+         height      : '70%',
+         autoSize : false,
+         closeClick  : false,
+         openEffect  : 'none',
+         closeEffect : 'none',
+         type        : 'iframe'
+      });
 	});
-	
+
 	</script>
-	
+
 
 	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />	
-	
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
 	<!-- javascript -->
 	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -123,8 +135,8 @@
 	  ga('send', 'pageview');
 
 	</script>
-  
-	
+
+
 	</head>
   <body>
 	<script type="text/javascript">
@@ -144,29 +156,29 @@
 					    newPos = li.position().left + (li.width()/2) - indicatorHalfWidth;
 					indicator.stop(true).animate({ left: newPos }, 600, 'easeInOutExpo');
 				}
-			});	
+			});
 
 		});
 
 	</script>
-	
+
     <img src="bg_skillville_front.jpg" id="bg">
 	<div style="position:absolute; top:40px; left: 50px; z-index:100"><a href="http://www.khlim.be" target="_blank"><img src="img/logos_ism_khlim.png"></a></div>
 	<div style="position:absolute; top:130px; left: 35px; z-index:100"><a href="http://www.kbc.be" target="_blank"><img src="img/logos_ism_kbc.png"></a></div>
-	
+
     <div class="logo">
 	&nbsp;
 	<!-- <img src="skillville_logo2.png"> -->
 	<div style="width: 170px; position: relative; z-index:999; margin-top: 265px; left: 579px; text-align:right">
-		<a class="various fancybox.ajax" href="inschrijven.php"><img src="img/inschrijv_btn.png"></div></a>
-	
+		<a class="fancyiframe" href="inschrijven.php"><img src="img/inschrijv_btn.png"></div></a>
+
 		<div class="nav" style="padding-left: 25px; width:540px; margin-left:auto; margin-right:auto; margin-top:-120px; z-index:99; position: relative;">	 
 			<header>
 				<hgroup>
 
 				</hgroup>
 			</header>
-			<nav style="border: solid 1px; border-color:#cdcdcd; background-color:white; padding-top:10px; padding-left:10px; padding-right:10px;">		
+			<nav style="border: solid 1px; border-color:#cdcdcd; background-color:white; padding-top:10px; padding-left:10px; padding-right:10px;">
 				<ul id="tabs" style="background-color:white;">
 					<li><a class="current" href="#">Wat?</a></li>
 					<li><a href="#">Voor wie?</a></li>
@@ -178,7 +190,7 @@
 
 			<div id="content" style="border: solid 1px; border-color:#cdcdcd; position: relative; background-color:white; padding-top:10px; padding-right:10px; padding-left: 5px; padding-bottom: 20px; font-size:15px;">
 
-				<section>				
+				<section>
 					<p>
 						Skillville is een online multimediatool voor het verhogen van de financi&euml;le geletterdheid en de realisatie van de vakoverschrijdende eindtermen.</p>
 
@@ -187,9 +199,9 @@
 
 				</section>
 
-				<section>		
-					<p>De leerlingen van de 1ste, 2de & 3de graad van het secundair onderwijs. 
-					Financi&euml;le geletterdheid wordt er op niveau van de graad gerealiseerd met telkens 25 specifieke events. </p>		
+				<section>
+					<p>De leerlingen van de 1ste, 2de & 3de graad van het secundair onderwijs.
+					Financi&euml;le geletterdheid wordt er op niveau van de graad gerealiseerd met telkens 25 specifieke events. </p>
 				</section>
 
 				<section>
@@ -214,12 +226,12 @@
 
 
 			</div>
-		
-		
-	
+
+
+
 	</div>
-	
+
 	</div>
-		
+
   </body>
 </html>

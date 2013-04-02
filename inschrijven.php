@@ -1,15 +1,15 @@
 <?php
    if (isset($_POST['submit']))
    {
-      mysql_connect('localhost', 'root', 'root');
+      mysql_connect('localhost', 'root', '');
       mysql_select_db('skillvillebe');
 
       // The checkboxen:
-      $opt = '';
-      if (isset($_POST['opt1'])) { $opt .= '1 '; }
-      if (isset($_POST['opt2'])) { $opt .= '2 '; }
-      if (isset($_POST['opt3'])) { $opt .= '3 '; }
-      if (isset($_POST['opt4'])) { $opt .= '4 '; }
+      $opt = ''; $optprefix = '';
+      if (isset($_POST['opt1'])) { $opt .= $optprefix . 'Limburg'; $optprefix = ', '; }
+      if (isset($_POST['opt2'])) { $opt .= $optprefix . 'Antwerpen'; $optprefix = ', '; }
+      if (isset($_POST['opt3'])) { $opt .= $optprefix . 'Vlaams-Brabant'; $optprefix = ', '; }
+      if (isset($_POST['opt4'])) { $opt .= $optprefix . 'Gent'; $optprefix = ', '; }
 
       // The other input:
       $data = array();
@@ -17,36 +17,44 @@
       $data['voornaam'] = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';
       $data['email'] = isset($_POST['email']) ? $_POST['email'] : '';
       $data['school'] = isset($_POST['school']) ? $_POST['school'] : '';
-      $data['opt'] = trim($opt);
+      $data['opt'] = $opt;
 
-      function buildInsert ($table, &$data)
+      // We need at least a name, email and one selected option:
+      if ($data['naam'] != '' && $data['email'] != '' && $data['opt'] != '')
       {
-         $names = '(';  $sql = 'values ('; $prefix = '';
-         foreach ($data as $field => $value)
+         function buildInsert ($table, &$data)
          {
-            $names .= $prefix . $field;
-            $sql .= $prefix . '\'' . mysql_real_escape_string($value) . '\'';
-            $prefix = ',';
+            $names = '(';  $sql = 'values ('; $prefix = '';
+            foreach ($data as $field => $value)
+            {
+               $names .= $prefix . $field;
+               $sql .= $prefix . '\'' . mysql_real_escape_string($value) . '\'';
+               $prefix = ',';
+            }
+            return ('insert into ' . $table . $names . ')' . $sql . ')');
          }
-         return ('insert into ' . $table . $names . ')' . $sql . ')');
+
+         $sql = buildInsert('inschrijven', $data);
+         if (!mysql_query($sql)) { exit(mysql_error()); }
+
+         // So everything is in the DB now.
+
+         $subject = 'Bevestiging SKILLVILLE voorstelling';
+         $message = sprintf('<p>Beste %s %s,</p>Wij hebben u inschrijving, voor de <b>voorstelling in %s' .
+            '</b> correct ontvangen!<p>We kijken alvast uit naar u komst</p>Met vriendelijke groeten,<br>Het SKILLVILLE team!',
+            $data['naam'], $data['voornaam'], $data['opt']);
+         $headers = 'From: info@skillville.be' . "\r\n" .
+            'Reply-To: info@skillville.be' . "\r\n";
+
+         if (!@mail($data['email'], $subject, $message, $headers))
+         {
+            exit('<h3>Nope.</h3> <p>A failure has successfully occurred.</p>');
+         }
+         else
+         {
+            exit('<h3>Registratie geslaagd!</h3> <p>Er werd u een bevestigingsmail toegestuurd!</p>' . $message);
+         }
       }
-
-      $sql = buildInsert('inschrijven', $data);
-      if (!mysql_query($sql)) { exit(mysql_error()); }
-
-      // So everything is in the DB now.
-
-      $subject = 'Bevestiging SKILLVILLE voorstelling';
-      $message = '<p>Beste'.$data['naam'].' '.$data['voornaam'].',</p>Wij hebben u inschrijving, voor de <b>voorstelling in'.$data['opt'].'</b> correct ontvangen!<p>We kijken alvast uit naar u komst</p>Met vriendelijke groeten,<br>Het SKILLVILLE team!';
-
-      if (!@mail($data['email'], $subject, $message))
-      {
-         // What to do if the email address is not valid or something.
-         // ...
-         // perhaps remove the record and request re-registration?
-      }
-
-      exit('<h3>Registratie geslaagd!</h3> <p>Er werd u een bevestigingsmail toegestuurd!</p>'); // Perhaps redirect to start page here?
    }
 ?>
 <html>
@@ -64,7 +72,7 @@
 
 	<fieldset style="border: 1px solid grey; padding:10px; margin-top:20px;">
 	<legend style=" border: grey 1px solid; width: 200px; padding-left:10px;"><h4>Kies een voorstelling:</h4></legend>
-       <form method="post" action="#">
+       <form method="post" action="#" target="_self">
          <div class="row-fluid itemrow">
             <div style="float: left">
                <input type="checkbox" name="opt1" value="1"></input>
@@ -108,7 +116,7 @@
          </div>
 
 		</fieldset>
-		
+
          <div class="row-fluid" style="margin-top: 24px;">
             <div class="span4" style="text-align: right;"><b>Naam:</b> </div>
             <div class="span8"><input style="width: 100%;" type="text" name="naam" value=""></input></div>
@@ -131,10 +139,10 @@
        </form>
 		 <div class="row-fluid">
 			<div style="text-align: center;">
-				
-			</div> 
+
+			</div>
 		 </div>
-       
+
     </div>
   </body>
 </html>

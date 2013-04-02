@@ -1,10 +1,14 @@
+
 <html>
   <head>
-	<title>SkillVille.be - Oefenen van levensvaardigheden</title>
+	<title>SKILLVILLE.be - Oefenen van levensvaardigheden</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 	  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
@@ -24,16 +28,16 @@
 	.bgheight { height: 100%; }
 	.logo {
 		position: relative;
-		margin-top:-130px;
+		margin-top:-85px;
 		margin-left:auto;
 		margin-right:auto;
 		padding-right:20px;
 		z-index:1;
-		width:855px;
+		width:900px;
 		background-position:right; 
-		height:500;
-/*		border: 1px green solid;*/
-/*		background-image:url('skillville_logo2.png');*/
+		height:500px;
+/*		border: 1px green solid;
+*/		background-image:url('skillville_logo2.png');
 		background-repeat:no-repeat;
 	}
 	
@@ -85,8 +89,22 @@
 			});
 	});
 	
+	$(document).ready(function() {
+		$(".various").fancybox({
+			maxWidth	: 700,
+			maxHeight	: 650,
+			fitToView	: false,
+			width		: '70%',
+			height		: '70%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+	});
 	
 	</script>
+	
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
@@ -105,7 +123,9 @@
 	  ga('send', 'pageview');
 
 	</script>
-  </head>
+  
+	
+	</head>
   <body>
 	<script type="text/javascript">
 
@@ -134,9 +154,13 @@
 	<div style="position:absolute; top:40px; left: 50px; z-index:100"><a href="http://www.khlim.be" target="_blank"><img src="img/logos_ism_khlim.png"></a></div>
 	<div style="position:absolute; top:130px; left: 35px; z-index:100"><a href="http://www.kbc.be" target="_blank"><img src="img/logos_ism_kbc.png"></a></div>
 	
-    <div class="logo"><img src="skillville_logo2.png">
+    <div class="logo">
+	&nbsp;
+	<!-- <img src="skillville_logo2.png"> -->
+	<div style="width: 170px; position: relative; z-index:999; margin-top: 265px; left: 579px; text-align:right">
+		<a class="various fancybox.ajax" href="inschrijven.php"><img src="img/inschrijv_btn.png"></div></a>
 	
-		<div class="nav" style="padding-left: 25px; width:540px; margin-left:auto; margin-right:auto; margin-top:-200px; z-index:99; position: relative;">	 
+		<div class="nav" style="padding-left: 25px; width:540px; margin-left:auto; margin-right:auto; margin-top:-120px; z-index:99; position: relative;">	 
 			<header>
 				<hgroup>
 
@@ -191,10 +215,11 @@
 
 			</div>
 		
-		</div>
+		
 	
 	</div>
-
+	
+	</div>
 		
   </body>
 </html>
